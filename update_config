@@ -1,0 +1,12 @@
+#! /bin/bash
+
+git fetch
+git merge
+
+# Update config files
+
+cp bash_aliases ~/.bash_aliases
+echo "Updated bash_aliases"
+
+
+echo "CHANGES SYNCED"
