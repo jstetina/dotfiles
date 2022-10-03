@@ -12,3 +12,6 @@ alias drel='sudo systemctl daemon-reload'
 # TMUX
 alias tma='tmux a -t'
 alias tl='tmux ls'
+
+# FILE SYSTEM
+alias up='cd ..'
