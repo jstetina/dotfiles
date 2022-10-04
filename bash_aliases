@@ -15,3 +15,4 @@ alias tl='tmux ls'
 
 # FILE SYSTEM
 alias up='cd ..'
+alias la='ls -a'
