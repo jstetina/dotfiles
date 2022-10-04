@@ -9,6 +9,12 @@ alias drest='sudo systemctl restart'
 alias dlog='sudo journalctl -e -u'
 alias drel='sudo systemctl daemon-reload'
 
+# PACKAGES
+alias upup='sudo apt update; sudo apt upgrade'
+
+# NETWORKING
+alias ports='netstat -tulanp'
+
 # TMUX
 alias tma='tmux a -t'
 alias tl='tmux ls'
@@ -16,3 +22,4 @@ alias tl='tmux ls'
 # FILE SYSTEM
 alias up='cd ..'
 alias la='ls -la'
+alias gh='history | grep'
