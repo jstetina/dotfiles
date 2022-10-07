@@ -10,7 +10,7 @@ alias dlog='sudo journalctl -e -u'
 alias drel='sudo systemctl daemon-reload'
 
 # PACKAGES
-alias upup='sudo apt update; sudo apt upgrade'
+alias upup='yes | sudo apt update; yes | sudo apt upgrade'
 
 # NETWORKING
 alias ports='netstat -tulanp'
