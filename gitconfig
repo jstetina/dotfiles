@@ -1,0 +1,6 @@
+[user]
+	email = jakub.stetina2003@gmail.com
+	name = techguy007
+[alias]
+	br = branch
+	c = 'commit -m'
