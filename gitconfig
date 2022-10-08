@@ -4,3 +4,4 @@
 [alias]
 	br = branch
 	c = commit -m
+	p = push
