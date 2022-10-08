@@ -3,4 +3,4 @@
 	name = techguy007
 [alias]
 	br = branch
-	c = 'commit -m'
+	c = commit -m
