@@ -12,7 +12,7 @@ alias drel='sudo systemctl daemon-reload'
 
 # PACKAGES
 alias upup='yes | sudo apt update; yes | sudo apt upgrade'
-alias fullup='yes | sudo apt update; yes | sudo apt full-upagrade'
+alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
 
 # NETWORKING
 alias ports='netstat -tulanp'
