@@ -27,5 +27,9 @@ alias tl='tmux ls'
 # FILE SYSTEM
 alias up='cd ..'
 alias la='ls -la'
+alias ll='ls -a'
 alias lh='ls -ld .?*'
 alias gh='history | grep'
+
+# GIT
+alias gfc='git add . && git commit -m "fast auto commit" && git push
