@@ -30,7 +30,7 @@ function domain_check(){
         return 0
     fi 
     
-    DOMAINS=('.cz' '.sk' '.com' '.org'  '.eu')
+    DOMAINS=('.cz' '.com' '.org'  '.eu')
     
     ELEMENTS=${#DOMAINS[@]} 
     
