@@ -4,6 +4,8 @@ function install(){
   sudo apt install -y $1;
 }
 
+sudo apt update -y
+sudo apt upgrade -y
 
 # Python
 install python3
