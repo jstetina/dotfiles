@@ -27,7 +27,7 @@ alias tl='tmux ls'
 # FILE SYSTEM
 alias up='cd ..'
 alias la='ls -la'
-alias ll='ls -a'
+alias ll='ls -l'
 alias lh='ls -ld .?*'
 alias gh='history | grep'
 
