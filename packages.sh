@@ -15,6 +15,9 @@ install gcc
 install gdb
 install make
 
+# Git 
+install git
+
 # MULTIPLEXERS
 install screen
 install tmux
@@ -25,8 +28,8 @@ install htop
 # Tar 
 install tar
 
-# Git 
-install git
+# Whois 
+install whois
 
 # Maps 
 install mapscii
