@@ -32,7 +32,9 @@ install tar
 install whois
 
 # Maps 
-install mapscii
+install snapd
+sudo snap install core
+sudo snap install mapscii
 
 # NPM pack. manager
 install nodejs
