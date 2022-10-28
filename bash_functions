@@ -27,21 +27,24 @@ function system-status(){
 function domain_check(){ 
     if [ "$#" == "0" ]; then 
         echo "You need tu supply at least one argument!" 
-        exit 1
+        return 0
     fi 
     
-    DOMAINS=( '.com' '.co.uk' '.net' '.info' '.mobi' '.org' '.tel' '.biz' '.tv' '.cc' '.eu' '.ru' '.in' '.it' '.sk' '.com.au' )
+    DOMAINS=('.cz' '.sk' '.com' '.org'  '.eu')
     
     ELEMENTS=${#DOMAINS[@]} 
     
     while (( "$#" )); do 
     
         for (( i=0;i<$ELEMENTS;i++)); do 
-            whois $1${DOMAINS[${i}]} | egrep -q \ 
-            '^No match|^NOT FOUND|^Not fo|AVAILABLE|^No Data Fou|has not been regi|No entri' 
-            if [ $? -eq 0 ]; then 
+            whois $1${DOMAINS[${i}]} | egrep -q '^No match|^NOT FOUND|^Not fo|AVAILABLE|^No Data Fou|has not been regi|No entri' 
+            if [ $? -eq 0 ]; 
+            then 
                 echo "$1${DOMAINS[${i}]} : available" 
+            else 
+                echo "$1${DOMAINS[${i}]} : registered" 
             fi 
+
         done     
     shift 
     done

@@ -1,13 +1,11 @@
 #! /bin/bash
 
-# Pull changes from github
-git fetch
-git merge
-
 # Update config files
 
 cp gitconfig ~/.gitconfig
 cp bash_aliases ~/.bash_aliases
+cp bash_functions ~/.bash_functions
+
 echo "Updated bash_aliases"
 
 
