@@ -32,4 +32,4 @@ alias lh='ls -ld .?*'
 alias gh='history | grep'
 
 # GIT
-alias gfc='git add . && git commit -m "fast auto commit" && git push
+alias gfc='git add . && git commit -m "fast auto commit" && git push'
