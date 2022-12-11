@@ -1,7 +1,7 @@
 # TEMPERATURE
 alias temperature='vcgencmd measure_temp'
 
-# SYSTEMD ALIASES
+# SYSTEMD
 alias dstatus='sudo systemctl status'
 alias dstart='sudo systemctl start'
 alias dstop='sudo systemctl stop'
@@ -13,6 +13,13 @@ alias drel='sudo systemctl daemon-reload'
 # PACKAGES
 alias upup='yes | sudo apt update; yes | sudo apt upgrade'
 alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
+
+# SSH
+alias ci='ssh ironman'
+alias cir='remote-ironman'
+
+alias cb='ssh batman' 
+alias cbr='ssh batman-remote'
 
 # NETWORKING
 alias ports='netstat -tulanp'

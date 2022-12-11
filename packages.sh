@@ -4,8 +4,11 @@ function install(){
   sudo apt install -y $1;
 }
 
+echo "Updating apt repo";
 sudo apt update -y
-sudo apt upgrade -y
+sudo apt full-upgrade -y
+
+echo "Downloading packages";
 
 # Python
 install python3
@@ -31,16 +34,7 @@ install tar
 # Whois 
 install whois
 
-# Maps 
-install snapd
-sudo snap install core
-sudo snap install mapscii
 
-# NPM pack. manager
-install nodejs
-install npm
-
-# Wikipedia tool
-sudo npm install wikit -g
-
+# Other shit
+install mp3info
 
