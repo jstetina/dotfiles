@@ -31,6 +31,9 @@ install htop
 # Tar 
 install tar
 
+# Ctl 
+install pactl
+
 # Whois 
 install whois
 
