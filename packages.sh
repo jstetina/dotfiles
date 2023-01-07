@@ -16,7 +16,10 @@ install python3
 # C programming
 install gcc
 install gdb
-install make
+install mak
+
+# Editors
+install vim
 
 # Git 
 install git
