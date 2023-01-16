@@ -2,6 +2,7 @@
 alias temperature='vcgencmd measure_temp'
 
 # SYSTEMD
+alias dstat='sudo systemctl status'
 alias dstatus='sudo systemctl status'
 alias dstart='sudo systemctl start'
 alias dstop='sudo systemctl stop'
