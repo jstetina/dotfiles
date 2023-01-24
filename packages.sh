@@ -30,6 +30,7 @@ install git
 install gh
 
 # Connections
+install tor
 install wget
 install curl
 
