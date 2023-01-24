@@ -51,6 +51,8 @@ install pactl
 install whois
 
 # Other utils
+install transmission-cli
+install time
 install ascii
 install mp3info
 install grub-customizer
