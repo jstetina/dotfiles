@@ -30,9 +30,10 @@ install git
 install gh
 
 # Connections
-install tor
 install wget
 install curl
+install tor
+install torsocks
 
 # MULTIPLEXERS
 install screen
