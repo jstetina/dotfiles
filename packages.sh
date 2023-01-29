@@ -28,6 +28,7 @@ install vim
 # Git, github 
 install git
 install gh
+install tig
 
 # Connections
 install wget
