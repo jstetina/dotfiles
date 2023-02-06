@@ -33,6 +33,7 @@ install tig
 # Connections
 install wget
 install curl
+install openvpn
 install tor
 install torsocks
 

@@ -22,6 +22,8 @@ alias cir='remote-ironman'
 alias cb='ssh batman' 
 alias cbr='ssh batman-remote'
 
+alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds'
+
 # NETWORKING
 alias ports='netstat -tulanp'
 
