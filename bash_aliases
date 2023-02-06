@@ -31,11 +31,12 @@ alias neo='cypher-shell'
 # TMUX
 alias tma='tmux a -t'
 alias tl='tmux ls'
+alias tk='tmux kill-session -t'
 
 # FILE SYSTEM
 alias up='cd ..'
 alias la='ls -la'
-alias ll='ls -l'
+alias ll='ls -lh'
 alias lh='ls -ld .?*'
 alias gh='history | grep'
 
