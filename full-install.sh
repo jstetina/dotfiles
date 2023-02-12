@@ -6,5 +6,5 @@ function run(){
 
 run packages.sh
 run install_python_libs.sh
-run update_config
+run update_config.sh
 
