@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Hush login
+touch ~/.hushlogin
+
 # Update config files
 
 cp gitconfig ~/.gitconfig
