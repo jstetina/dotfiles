@@ -7,4 +7,4 @@ OUT_FILE="keys"
 
 KEYS=$(wget -q "$SITE" -O "$SSH_DIR$OUT_FILE")
 
-cat "$SSH_DIR$OUT_FILE" >> authorized_keys
+cat "$SSH_DIR$OUT_FILE" >> "${SSH_DIR}authorized_keys"
