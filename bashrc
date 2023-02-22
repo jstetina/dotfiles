@@ -126,8 +126,7 @@ parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-
- __prompt_command() {
+__prompt_command() {
       local EXIT="$?"                # This needs to be first
       PS1=""
       local RCol='\[\e[0m\]'
@@ -137,14 +136,17 @@ parse_git_branch() {
       local BBlu='\[\e[1;34m\]'
       local Pur='\[\e[0;35m\]'
       local Yel='\[\033[0;33m\]'
+      local BGreen='\[\033[01;32m\]'
+      local BRed='\[\e[1;31m\]'
       if [ $EXIT != 0 ]; then
-          PS1+="${Red}X${RCol} "        # Add red if exit code non 0
+          PS1+="${BRed}"
+          # Add red if exit code non 0
       else
-          PS1+="${Gre}✓${RCol} "
+          PS1+="${BGreen}"
       fi
         local TIME="[${Yel}\D{%H:%M}${RCol}]"
-        PS1+="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] ${TIME}: \[\033[01;34m\]\w\[\033[01;31m\]\033[0;31m $(parse_git_branch)\[\033[00m\]\$ "
-  }
+        PS1+="${debian_chroot:+($debian_chroot)}\h${RCol} ${TIME}: \[\033[01;34m\]\w\[\033[01;31m\]\033[0;31m $(parse_git_branch)\[\033[00m\]\$ "
+    }
  
 
 # Prompt
