@@ -41,6 +41,8 @@ alias la='ls -la'
 alias ll='ls -lh'
 alias lh='ls -ld .?*'
 alias gh='history | grep'
+alias fs='du -shL'
+alias fsp='df -h'
 
 # GIT
 alias gfc='git add . && git commit -m "fast auto commit" && git push'
