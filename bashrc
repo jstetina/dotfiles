@@ -145,7 +145,7 @@ __prompt_command() {
           PS1+="${BGreen}"
       fi
         local TIME="[${Yel}\D{%H:%M}${RCol}]"
-        PS1+="${debian_chroot:+($debian_chroot)}\h${RCol} ${TIME}: \[\033[01;34m\]\w\[\033[01;31m\]\033[0;31m $(parse_git_branch)\[\033[00m\]\$ "
+        PS1+="${debian_chroot:+($debian_chroot)}\h${RCol} ${TIME}: \[\033[01;34m\]\w\[\033[01;31m\]\[\033[0;31m\] $(parse_git_branch)\[\033[00m\]\$ "
     }
  
 
