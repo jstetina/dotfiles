@@ -21,6 +21,7 @@ install python3-pip
 install gcc
 install gdb
 install make
+install cmake
 
 # Editors
 install vim
