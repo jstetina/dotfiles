@@ -135,12 +135,14 @@ __prompt_command() {
       local BYel='\[\e[1;33m\]'
       local BBlu='\[\e[1;34m\]'
       local Pur='\[\e[0;35m\]'
-      local Yel='\[\033[0;33m\]'
+      local BYel='\[\033[01;33m\]'
       local BGreen='\[\033[01;32m\]'
       local BRed='\[\e[1;31m\]'
-      if [ $EXIT != 0 ]; then
-          PS1+="${BRed}"
+      if [ $EXIT == 130 ]; then
+          PS1+="${BYel}"
           # Add red if exit code non 0
+      elif [ $EXIT != 0 ]; then
+          PS+="${BRed}"
       else
           PS1+="${BGreen}"
       fi
