@@ -135,6 +135,7 @@ __prompt_command() {
       local BYel='\[\e[1;33m\]'
       local BBlu='\[\e[1;34m\]'
       local Pur='\[\e[0;35m\]'
+      local Yel='\[\033[0;33m\]'
       local BYel='\[\033[01;33m\]'
       local BGreen='\[\033[01;32m\]'
       local BRed='\[\e[1;31m\]'
