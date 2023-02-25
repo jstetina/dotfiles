@@ -28,6 +28,16 @@ Host ironman-remote
     StrictHostKeyChecking accept-new
     UserKnownHostsFile NUL
 
+Host merlin
+    HostName merlin.fit.vutbr.cz
+    User xsteti05
+    Port 22
+
+Host eva
+    HostName eva.fit.vutbr.cz
+    User xsteti05
+    Port 22
+
 Host minerva
     HostName minerva1.fit.vutbr.cz
     User xsteti05
