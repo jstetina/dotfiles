@@ -6,6 +6,7 @@ touch ~/.hushlogin
 # Update config files
 
 cp bashrc ~/.bashrc
+cp bashrc ~/.profile
 
 cp gitconfig ~/.gitconfig
 cp bash_aliases ~/.bash_aliases
