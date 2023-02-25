@@ -140,9 +140,8 @@ __prompt_command() {
       local BRed='\[\e[1;31m\]'
       if [ $EXIT == 130 ]; then
           PS1+="${BYel}"
-          # Add red if exit code non 0
       elif [ $EXIT != 0 ]; then
-          PS+="${BRed}"
+          PS1+="${BRed}"
       else
           PS1+="${BGreen}"
       fi
