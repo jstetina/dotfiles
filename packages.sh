@@ -37,6 +37,7 @@ install curl
 install openvpn
 install tor
 install torsocks
+install openvpn
 
 # MULTIPLEXERS
 install screen
