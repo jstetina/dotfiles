@@ -1,0 +1,32 @@
+set from = "jakub.stetina2003@gmail.com"
+set realname = ""
+set imap_user = "jakub.stetina2003@gmail.com"
+set imap_pass = ""
+
+##REMOTE GMAIL FOLDERS
+set folder = "imaps://jakub.stetina2003@imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Google Mail]/Drafts"
+set trash = "+[Google Mail]/Trash"
+
+##SMTP Settings to sent email
+set smtp_url = "smtp://jakub.stetina2003@smtp.gmail.com:587/"
+set smtp_pass = ""
+
+##LOCAL FOLDERS FOR CACHED HEADERS AND CERTIFICATES
+#set header_cache =~/.mutt/cache/headers
+#set message_cachedir =~/.mutt/cache/bodies
+#set certificate_file =~/.mutt/certificates
+
+##SECURING
+set move = no  #Stop asking to "move read messages to mbox"!
+set imap_keepalive = 900
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+##Sort by newest conversation first.
+set sort = reverse-threads
+set sort_aux = last-date-received
+
+##Set editor to create new email
+set editor='vim'
