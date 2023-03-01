@@ -17,7 +17,7 @@ alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
 
 # SSH
 alias ci='ssh ironman'
-alias cir='ssh remote-ironman'
+alias cir='ssh ironman-remote'
 
 alias cb='ssh batman' 
 alias cbr='ssh batman-remote'
