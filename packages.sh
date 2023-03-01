@@ -38,6 +38,7 @@ install openvpn
 install tor
 install torsocks
 install openvpn
+install mutt
 
 # MULTIPLEXERS
 install screen
