@@ -17,10 +17,10 @@ alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
 
 # SSH
 alias ci='ssh ironman'
-alias cir='ssh ironman-remote'
+alias cir='python /home/kuba/.ssh/setup.py; ssh ironman-remote'
 
 alias cb='ssh batman' 
-alias cbr='ssh batman-remote'
+alias cbr='python /home/kuba/.ssh/setup.py; ssh batman-remote'
 
 alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds'
 
