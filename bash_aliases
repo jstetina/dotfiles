@@ -10,7 +10,7 @@ alias drest='sudo systemctl restart'
 alias denable='sudo systemctl enable'
 alias dlog='sudo journalctl -e -u'
 alias drel='sudo systemctl daemon-reload'
-
+alias dlt='sudo systemctl list-timers --all'
 # PACKAGES
 alias upup='yes | sudo apt update; yes | sudo apt upgrade'
 alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
