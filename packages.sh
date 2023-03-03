@@ -30,6 +30,7 @@ install vim
 install git
 install gh
 install tig
+install git-ftp
 
 # Connections
 install wget
