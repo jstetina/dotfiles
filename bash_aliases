@@ -30,7 +30,7 @@ alias cbr='python /home/kuba/.ssh/setup.py; ssh batman-remote'
 alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds'
 
 # NETWORKING
-alias ports='netstat -tulanp'
+alias ports='sudo netstat -tulanp'
 
 # NEO4J graph database
 alias neo='cypher-shell'
