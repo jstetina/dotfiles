@@ -38,6 +38,7 @@ install curl
 install openvpn
 install tor
 install torsocks
+install net-tools
 install openvpn
 install mutt
 
