@@ -12,6 +12,7 @@ alias denable='sudo systemctl enable'
 alias dlog='sudo journalctl -e -u'
 alias drel='sudo systemctl daemon-reload'
 alias dlt='sudo systemctl list-timers --all'
+
 # PACKAGES
 alias upup='yes | sudo apt update; yes | sudo apt upgrade'
 alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
@@ -36,6 +37,8 @@ alias tk='tmux kill-session -t'
 
 # FILE SYSTEM
 alias up='cd ..'
+alias up2='cd ../..'
+alias up3='cd ../../..'
 alias la='ls -la'
 alias ll='ls -lh'
 alias lh='ls -ld .?*'
