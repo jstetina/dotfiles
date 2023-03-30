@@ -2,7 +2,12 @@
 alias lec='echo $?'
 
 
+# JOURNALCTL
+alias jctl='sudo journalctl'
+alias blg='sudo journalctl -b'
+
 # SYSTEMD
+alias sctl='sudo systemctl'
 alias dstat='sudo systemctl status'
 alias dstatus='sudo systemctl status'
 alias dstart='sudo systemctl start'
