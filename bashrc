@@ -111,6 +111,9 @@ fi
 
 ####CUSTOM####
 
+EDITOR=$(which vim)
+export EDITOR
+
 # Bash functions
 if [[ -f ~/.bash_functions ]]; then
     . ~/.bash_functions

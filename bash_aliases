@@ -48,6 +48,7 @@ alias la='ls -la'
 alias ll='ls -lh'
 alias lh='ls -ld .?*'
 alias gh='history | grep'
+alias sd='grep -rnw . -e'
 alias fs='du -shL'
 alias fsp='df -h'
 
