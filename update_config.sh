@@ -17,5 +17,8 @@ mkdir -p ~/.mutt
 
 cp vimrc ~/.vimrc
 
+mkdir -p ~/.config/sway
+cp sway/config ~/.config/sway/config
+
 echo "Updated bash_aliases"
 echo "CHANGES SYNCED"
