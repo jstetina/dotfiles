@@ -3,8 +3,9 @@
 # Hush login
 touch ~/.hushlogin
 
-# Update config files
+## Update config files
 
+# BASH
 cp bashrc ~/.bashrc
 cp bashrc ~/.profile
 
@@ -17,8 +18,11 @@ mkdir -p ~/.mutt
 
 cp vimrc ~/.vimrc
 
+# Swaywm
 mkdir -p ~/.config/sway
-cp sway/config ~/.config/sway/config
+mkdir -p ~/.config/waybar
+mkdir -p ~/.config/rofi
+cp -r config/* ~/.config
 
 echo "Updated bash_aliases"
 echo "CHANGES SYNCED"

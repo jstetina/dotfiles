@@ -2,7 +2,10 @@
 	email = jakub.stetina2003@gmail.com
 	name = techguy007
 [alias]
-	br = branch
+	b = branch
+    br = branch
 	c = commit -m
 	p = push
 	s = status
+    pl = pull
+    d = diff
