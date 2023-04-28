@@ -24,6 +24,7 @@
     //         "default": ""
     //     }
     // },
+    "background":"#ff0000",
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

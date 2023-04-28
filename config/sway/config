@@ -211,7 +211,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-# Touchpad natural scroll and click enabled
+## Touchpad natural scroll and click enabled
+# Thinkpad
 input "1739:0:Synaptics_TM3075-002" {
     accel_profile adaptive
     click_method button_areas
@@ -220,6 +221,16 @@ input "1739:0:Synaptics_TM3075-002" {
     scroll_method two_finger
     tap enabled
 }
+
+# Dell
+input "1102:4639:DELL0819:00_044E:121F_Touchpad" {
+    click_method button_areas
+    dwt disabled
+    natural_scroll enabled
+    scroll_method two_finger
+    tap enabled
+}
+
 
 
 # Screen brightness
