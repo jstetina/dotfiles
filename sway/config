@@ -19,8 +19,13 @@ include /etc/sway/config-vars.d/*
 ### Output config
 
 # Gaps
-gaps inner 10
-gaps outer 10
+#gaps inner 10
+#gaps outer 3
+
+# Window borders
+default_border pixel 3
+client.focused "#e38232" "#e38232" "#ffffff"
+#client.focused "#ffffff" "#ffffff" "#ffffff"
 
 # Background
 output * bg ~/Pictures/wallpaper.jpg fill
@@ -79,8 +84,9 @@ output * bg ~/Pictures/wallpaper.jpg fill
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # Logout
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaymsg exit
 #
 # Moving around:
 #
@@ -148,6 +154,7 @@ output * bg ~/Pictures/wallpaper.jpg fill
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
+    bindsym Control+Shift+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
