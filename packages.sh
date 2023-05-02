@@ -50,6 +50,9 @@ install upower
 install libxkbregistry-dev
 install brightnessctl
 install redshift
+install grim
+install slurp
+install wl-clipboard
 
 # Editors
 install vim

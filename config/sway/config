@@ -16,8 +16,17 @@ set $term konsole
 # Launcher 
 set $menu rofi -show drun
 
-
 include /etc/sway/config-vars.d/*
+
+
+#setxkbmap -layout us,de
+#setxkbmap -option 'grp:alt_shift_toggle'
+
+exec "setxkbmap -layout us,cs"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
+
+
+
 
 ### Output config
 
@@ -26,7 +35,7 @@ include /etc/sway/config-vars.d/*
 #gaps outer 3
 
 # Window borders
-default_border pixel 3
+default_border pixel 2
 client.focused "#e38232" "#e38232" "#ffffff"
 #client.focused "#ffffff" "#ffffff" "#ffffff"
 
@@ -64,6 +73,10 @@ output * bg ~/Pictures/wallpaper.jpg fill
 #
 # Basics:
 #
+
+    # Screenshot
+    bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
+
     # terminal
     bindsym Control+Alt+t exec $term
 
@@ -91,9 +104,15 @@ output * bg ~/Pictures/wallpaper.jpg fill
     bindsym $mod+l exec swaylock --config ~/.swaylock.config
 
     # Logout
-    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
     bindsym $mod+Shift+e exec swaymsg exit
-#
+
+    # Shutdown 
+    bindsym Control+Alt+s exec systemctl suspend
+
+    # Suspend
+    bindsym Control+Alt+Delete exec systemctl poweroff 
+
+
 # Moving around:
 #
     # Move your focus around
@@ -151,7 +170,7 @@ output * bg ~/Pictures/wallpaper.jpg fill
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    bindsym $mod+h splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -167,7 +186,7 @@ output * bg ~/Pictures/wallpaper.jpg fill
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -231,18 +250,26 @@ input "1102:4639:DELL0819:00_044E:121F_Touchpad" {
     tap enabled
 }
 
+input "type:keyboard" {
+    xkb_layout "us,cz"
+    xkb_options "grp:lalt_lshift_toggle"
+    repeat_delay 250
+    repeat_rate 30
+}
+
+# Switch keyboard layout
+bindsym $mod+space input "type:keyboard" xkb_switch_layout next
+
 
 
 # Screen brightness
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym --locked XF86MonBrightnessDown exec  brightnessctl set 10%-
-    
 
 # Audio keys
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-
 
 
 #
