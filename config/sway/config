@@ -25,7 +25,10 @@ include /etc/sway/config-vars.d/*
 exec "setxkbmap -layout us,cs"
 exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
-
+# Switch keyboard layout
+bindsym $mod+space exec swaymsg -t get_inputs -r \
+  | jq '[.[] | select(.type == "keyboard") | .xkb_active_layout_index][0] - 1 | fabs' \
+  | xargs swaymsg 'input type:keyboard xkb_switch_layout'
 
 
 ### Output config
@@ -256,9 +259,6 @@ input "type:keyboard" {
     repeat_delay 250
     repeat_rate 30
 }
-
-# Switch keyboard layout
-bindsym $mod+space input "type:keyboard" xkb_switch_layout next
 
 
 
