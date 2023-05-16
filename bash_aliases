@@ -52,6 +52,7 @@ alias gh='history | grep'
 alias sd='grep -rnw . -e'
 alias fs='du -shL'
 alias fsp='df -h'
+alias ishere='ls -1 | grep'
 
 # GIT
 alias gfc='git add . && git commit -m "fast auto commit" && git push'
