@@ -9,20 +9,25 @@ touch ~/.hushlogin
 cp bashrc ~/.bashrc
 cp bashrc ~/.profile
 
-cp gitconfig ~/.gitconfig
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
+echo "Updated bash config"
+
+cp gitconfig ~/.gitconfig
+echo "Updated git config"
 
 mkdir -p ~/.mutt
 #cp muttrc ~/.mutt/muttrc
+echo "Updated mutt config"
 
 cp vimrc ~/.vimrc
+echo "Updated vim config"
 
 # Swaywm
+echo "Updated sway config"
 mkdir -p ~/.config/sway
 mkdir -p ~/.config/waybar
 mkdir -p ~/.config/rofi
 cp -r config/* ~/.config
 
-echo "Updated bash_aliases"
 echo "CHANGES SYNCED"
