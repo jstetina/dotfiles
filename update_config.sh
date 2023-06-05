@@ -11,6 +11,8 @@ cp bashrc ~/.profile
 
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
+
+cp send_mail.sh ~
 echo "Updated bash config"
 
 cp gitconfig ~/.gitconfig
