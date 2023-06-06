@@ -57,7 +57,7 @@ fi
 
 
 # Send mail
-echo "$MAIL_BODY" | mutt -s "$HOST_NAME: $MAIL_SUBJECT" "$RECIPIENT_MAIL"
+echo "$MAIL_BODY" | mutt -s "$HOSTNAME: $MAIL_SUBJECT" "$RECIPIENT_MAIL"
 if [ $? -eq 0 ];
 then 
     echo "Mail sent successfuly"
