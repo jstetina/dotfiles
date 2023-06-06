@@ -7,6 +7,7 @@
 ## 3 -> recipient mail (optional)
 
 RECIPIENT_MAIL="jakub.stetina2003@gmail.com"
+HOSTNAME=$(hostname)
 
 # Check for mutt config file
 if [ ! -f "./.mutt/muttrc" ];
@@ -56,7 +57,7 @@ fi
 
 
 # Send mail
-echo "$MAIL_BODY" | mutt -s "$MAIL_SUBJECT" "$RECIPIENT_MAIL"
+echo "$MAIL_BODY" | mutt -s "$HOST_NAME: $MAIL_SUBJECT" "$RECIPIENT_MAIL"
 if [ $? -eq 0 ];
 then 
     echo "Mail sent successfuly"
