@@ -12,6 +12,9 @@ cp bashrc ~/.profile
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
 
+mkdir -p ~/Pictures
+cp img/* ~/Pictures
+
 cp send_mail.sh ~
 echo "Updated bash config"
 
