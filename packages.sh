@@ -20,40 +20,6 @@ install gdb
 install make
 install cmake
 
-# Sway
-install sway
-install swaylock
-install nautilus
-install dolphin
-install waybar
-install fonts-font-awesome
-install rofi
-install clang-tidy 
-install gobject-introspection 
-install libdbusmenu-gtk3-dev 
-install libevdev-dev 
-install libfmt-dev 
-install libgirepository1.0-dev 
-install libgtk-3-dev 
-install libgtkmm-3.0-dev 
-install libinput-dev 
-install libjsoncpp-dev 
-install libmpdclient-dev 
-install libnl-3-dev 
-install libnl-genl-3-dev 
-install libpulse-dev 
-install libsigc++-2.0-dev 
-install libspdlog-dev 
-install libwayland-dev 
-install scdoc 
-install upower 
-install libxkbregistry-dev
-install brightnessctl
-install redshift
-install grim
-install slurp
-install wl-clipboard
-
 # Editors
 install vim
 
