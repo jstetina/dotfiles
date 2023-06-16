@@ -110,7 +110,7 @@ fi
 
 
 ####CUSTOM####
-export PATH="$PATH:~/.local/bin"
+export PATH="$HOME/.local/bin:$PATH"
 
 EDITOR=$(which vim)
 export EDITOR
