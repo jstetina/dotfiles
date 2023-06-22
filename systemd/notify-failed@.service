@@ -1,0 +1,12 @@
+[Unit]
+Description=Notify Failed Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=kuba
+ExecStart=/bin/bash send_mail.sh -u %i -s "Unit %i failed"
+WorkingDirectory=/home/kuba
+
+[Install]
+WantedBy=default.target
