@@ -7,3 +7,4 @@ Close wind.     Win+C
 Full screen     Ctrl+Shift+F
 Center window   Ctrl+Alt+C
 Log out         Ctrl+Alt+Del
+Mv win btw scr  Win+Shift+ ->/<-
