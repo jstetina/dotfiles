@@ -57,6 +57,7 @@ install pactl
 install whois
 
 # Other utils
+install moreutils
 install transmission-cli
 install time
 install ascii
