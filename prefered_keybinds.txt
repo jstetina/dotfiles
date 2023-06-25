@@ -1,0 +1,10 @@
+Terminal        Ctrl+Alt+T
+Screenshot      Win+Shift+S
+Keyboard lang   Win+Space
+App launcher    Alt+Space
+Maximize        Win+Up
+Close wind.     Win+C
+Full screen     Ctrl+Shift+F
+Center window   Ctrl+Alt+C
+Log out         Ctrl+Alt+Del
+Mv win btw scr  Win+Shift+ ->/<-
