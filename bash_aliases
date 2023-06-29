@@ -8,14 +8,17 @@ alias blg='sudo journalctl -b'
 
 # SYSTEMD
 alias sctl='sudo systemctl'
+alias jctl='sudo journalctl'
 alias dstat='sudo systemctl status'
 alias dstatus='sudo systemctl status'
 alias dstart='sudo systemctl start'
 alias dstop='sudo systemctl stop'
 alias drest='sudo systemctl restart'
 alias denable='sudo systemctl enable'
+alias ddisable='sudo systemctl disable'
 alias dlog='sudo journalctl -e -u'
 alias drel='sudo systemctl daemon-reload'
+alias dfol='sudo journalctl -f -u' 
 alias dlt='sudo systemctl list-timers --all'
 
 # PACKAGES
