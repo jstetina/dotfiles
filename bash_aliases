@@ -61,4 +61,5 @@ alias ishere='ls -1 | grep'
 alias lsdir='ls -d */'
 
 # GIT
+alias g='git'
 alias gfc='git add . && git commit -m "fast auto commit" && git push'
