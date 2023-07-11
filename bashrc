@@ -113,7 +113,10 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 EDITOR=$(which vim)
+VISUAL=$(which vim)
+
 export EDITOR
+export VISUAL
 
 # Bash functions
 if [[ -f ~/.bash_functions ]]; then

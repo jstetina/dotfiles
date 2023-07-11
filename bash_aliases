@@ -1,7 +1,6 @@
 # BASH
 alias lec='echo $?'
 
-
 # JOURNALCTL
 alias jctl='sudo journalctl'
 alias blg='sudo journalctl -b'
@@ -22,8 +21,7 @@ alias dfol='sudo journalctl -f -u'
 alias dlt='sudo systemctl list-timers --all'
 
 # PACKAGES
-alias upup='yes | sudo apt update; yes | sudo apt upgrade'
-alias fullup='yes | sudo apt update; yes | sudo apt full-upgrade'
+alias upup='sudo apt -y update; sudo apt -y full-upgrade'
 
 # SSH
 alias ci='ssh ironman'
