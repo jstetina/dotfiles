@@ -57,6 +57,7 @@ install pactl
 install whois
 
 # Other utils
+install fcrackzip
 install moreutils
 install transmission-cli
 install time
