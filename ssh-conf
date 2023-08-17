@@ -1,13 +1,10 @@
 Host batman
     HostName 192.168.0.143
     User kuba
-    Port 22
 
 Host ironman
     HostName 192.168.0.88
     User kuba
-    Port 22
-
 
 Host batman-remote
     HostName 7.tcp.eu.ngrok.io
@@ -17,7 +14,6 @@ Host batman-remote
     CheckHostIp no
     StrictHostKeyChecking accept-new
     UserKnownHostsFile NUL
-
 
 Host ironman-remote
     HostName 7.tcp.eu.ngrok.io
@@ -31,19 +27,35 @@ Host ironman-remote
 Host merlin
     HostName merlin.fit.vutbr.cz
     User xsteti05
-    Port 22
 
 Host eva
     HostName eva.fit.vutbr.cz
     User xsteti05
-    Port 22
 
 Host minerva
     HostName minerva1.fit.vutbr.cz
     User xsteti05
-    Port 22
 
 Host athena
+    HostName athena3.fit.vutbr.cz
+    User xsteti05
+
+Host athena3
+    HostName athena3.fit.vutbr.cz
+    User xsteti05
+
+Host athena2
+    HostName athena2.fit.vutbr.cz
+    User xsteti05
+
+Host athena1
     HostName athena1.fit.vutbr.cz
     User xsteti05
-    Port 22
+
+Host pcknot6
+    HostName pcknot6.fit.vutbr.cz
+    User xsteti05
+
+Host pcknot
+    HostName pcknot6.fit.vutbr.cz
+    User xsteti05
