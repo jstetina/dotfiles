@@ -58,6 +58,8 @@ alias freesp='df -h'
 alias freespace='df -h'
 alias ishere='ls -1 | grep'
 alias lsdir='ls -d */'
+alias lines='wc -l'
+alias linesin='wc -l'
 
 # GIT
 alias g='git'
