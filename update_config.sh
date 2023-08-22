@@ -28,11 +28,4 @@ echo "Updated mutt config"
 cp vimrc ~/.vimrc
 echo "Updated vim config"
 
-# Swaywm
-echo "Updated sway config"
-mkdir -p ~/.config/sway
-mkdir -p ~/.config/waybar
-mkdir -p ~/.config/rofi
-cp -r config/* ~/.config
-
 echo "CHANGES SYNCED"
