@@ -25,6 +25,7 @@ mkdir -p ~/.mutt
 #cp muttrc ~/.mutt/muttrc
 echo "Updated mutt config"
 
+# (n)vim 
 cp vimrc ~/.vimrc
 echo "Updated vim config"
 

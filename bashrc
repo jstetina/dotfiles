@@ -114,6 +114,7 @@ fi
 alias vim=nvim
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/nvim/bin:$PATH"
 
 EDITOR=$(which nvim)
 VISUAL=$(which nvim)
