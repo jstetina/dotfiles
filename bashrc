@@ -111,12 +111,12 @@ fi
 
 ####CUSTOM####
 
-alias vim=neovim
+alias vim=nvim
 
 export PATH="$HOME/.local/bin:$PATH"
 
-EDITOR=$(which neovim)
-VISUAL=$(which neovim)
+EDITOR=$(which nvim)
+VISUAL=$(which nvim)
 
 export EDITOR
 export VISUAL
