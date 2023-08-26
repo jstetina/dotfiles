@@ -22,7 +22,6 @@ install cmake
 
 # Editors
 install vim
-install neovim
 
 # Git, github 
 install git
@@ -58,6 +57,8 @@ install pactl
 install whois
 
 # Other utils
+install npm
+install nodejs
 install fcrackzip
 install moreutils
 install transmission-cli
