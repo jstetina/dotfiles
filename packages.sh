@@ -22,6 +22,7 @@ install cmake
 
 # Editors
 install vim
+install neovim
 
 # Git, github 
 install git
