@@ -28,4 +28,7 @@ echo "Updated mutt config"
 cp vimrc ~/.vimrc
 echo "Updated vim config"
 
+cp tmux.conf ~/.tmux.conf
+echo "updated tmux config"
+
 echo "CHANGES SYNCED"
