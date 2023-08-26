@@ -40,6 +40,8 @@ alias neo='cypher-shell'
 alias tma='tmux a -t'
 alias tl='tmux ls'
 alias tk='tmux kill-session -t'
+alias tm='tmux'
+alias tks='tmux kill-server'
 
 # FILE SYSTEM
 alias up='cd ..'
