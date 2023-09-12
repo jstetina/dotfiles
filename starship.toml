@@ -32,6 +32,16 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 format = '[$symbol$branch(:$remote_branch)](fg:226) '
 
 [git_status]
+conflicted = 'C'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '[✓](bold green)'
+untracked = '🤷'
+stashed = '📦'
+modified = '[🖉 ](white)'
+staged = '[++\($count\)](green)'
+deleted = '🗑'
 
 
 [directory]
