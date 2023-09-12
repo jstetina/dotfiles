@@ -42,3 +42,7 @@ truncation_symbol = '…/'
 [cmd_duration]
 min_time = 500
 format = '[$duration](fg:249) '
+
+[character]
+success_symbol = '[❯](bold green) '
+error_symbol = '[✗](bold red) '
