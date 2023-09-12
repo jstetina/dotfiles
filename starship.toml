@@ -1,0 +1,44 @@
+format="""\
+$hostname\
+$time\
+$git_branch\
+$git_status\
+$python\
+$directory\
+$cmd_duration\
+$character"""
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold green) '
+disabled = false
+
+[time]
+disabled = false
+format = '\[[$time](bold fg:202)\] '
+time_format = '%H:%M'
+
+[python]
+symbol = '🐍'
+pyenv_version_name = false
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)](fg:226) '
+
+[git_status]
+
+
+[directory]
+format = '[$path](blue bold)[$read_only]($read_only_style) '
+truncation_length = 3
+truncation_symbol = '…/'
+
+[cmd_duration]
+min_time = 500
+format = '[$duration](fg:249) '

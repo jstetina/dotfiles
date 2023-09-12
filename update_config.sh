@@ -8,9 +8,9 @@ touch ~/.hushlogin
 # BASH
 cp bashrc ~/.bashrc
 cp bashrc ~/.profile
-
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
+cp starship.toml ~/.config
 
 mkdir -p ~/Pictures
 cp img/* ~/Pictures
