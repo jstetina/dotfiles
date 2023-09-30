@@ -57,6 +57,7 @@ install pactl
 install whois
 
 # Other utils
+install exiftool
 install npm
 install nodejs
 install fcrackzip
