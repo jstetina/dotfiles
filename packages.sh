@@ -57,11 +57,12 @@ install pactl
 install whois
 
 # Other utils
-install exiftool
+install poppler-utils
 install npm
 install nodejs
 install fcrackzip
 install moreutils
+install exiftool
 install transmission-cli
 install time
 install ascii

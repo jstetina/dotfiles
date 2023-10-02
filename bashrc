@@ -187,3 +187,4 @@ unset __conda_setup
 
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 eval "$(starship init bash)"
+
