@@ -21,6 +21,7 @@ alias dfol='sudo journalctl -f -u'
 alias dlt='sudo systemctl list-timers --all'
 
 # PACKAGES
+alias sai='sudo apt install -y'
 alias upup='sudo apt -y update; sudo apt -y full-upgrade'
 
 # SSH
