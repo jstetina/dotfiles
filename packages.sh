@@ -70,3 +70,4 @@ install mp3info
 install grub-customizer
 install tree
 install speedtest-cli
+install tty-clock
