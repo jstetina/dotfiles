@@ -126,6 +126,9 @@ if [[ -f ~/.bash_functions ]]; then
     . ~/.bash_functions
 fi
 
+# Custom dir colors file
+eval "$(dircolors ~/.dircolors)";
+
 # Shorten prompt
 PROMPT_DIRTRIM=2
  
@@ -135,7 +138,6 @@ color_prompt=yes
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-
 __prompt_command() {
       local EXIT="$?"                # This needs to be first
       PS1=""
@@ -161,30 +163,16 @@ __prompt_command() {
     }
  
 
-# Prompt
+# Non-starship (without starship)
 if [ "$color_prompt" = yes ]; then
     PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
 else
  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
 fi
 
-####END OF CUSTOM####
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/xsteti05/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/xsteti05/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/xsteti05/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/xsteti05/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+# Starship prompt
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 eval "$(starship init bash)"
+
+####END OF CUSTOM###
 
