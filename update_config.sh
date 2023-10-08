@@ -10,7 +10,7 @@ cp bashrc ~/.bashrc
 cp bashrc ~/.profile
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
-
+cp dircolors ~/.dircolors
 cp starship.toml ~/.config
 
 mkdir -p ~/Pictures
