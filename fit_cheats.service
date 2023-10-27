@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount fit cheats from g-drive to /mnt/cheats
+
+[Service]
+Type=simple
+User=kuba
+ExecStart=rclone mount --vfs-cache-mode full fit_cheats:FIT/CHEATS/ /mnt/cheats/
+ExecStop=umount /mnt/cheats/
+
+[Install]
+WantedBy=multi-user.target
