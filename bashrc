@@ -114,6 +114,8 @@ fi
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/miniconda3/bin:$PATH"
+export PATH="$HOME/ngrok/bin:$PATH"
+
 
 EDITOR=$(which vim)
 VISUAL=$(which vim)
