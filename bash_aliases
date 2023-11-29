@@ -22,6 +22,7 @@ alias dlt='sudo systemctl list-timers --all'
 
 # DOCKER
 alias docker='sudo docker'
+alias dckr='sudo docker'
 
 # PACKAGES
 alias sai='sudo apt install -y'
