@@ -20,6 +20,9 @@ alias drel='sudo systemctl daemon-reload'
 alias dfol='sudo journalctl -f -u' 
 alias dlt='sudo systemctl list-timers --all'
 
+# DOCKER
+alias docker='sudo docker'
+
 # PACKAGES
 alias sai='sudo apt install -y'
 alias upup='sudo apt -y update; sudo apt -y full-upgrade'
