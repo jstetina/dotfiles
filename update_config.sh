@@ -5,7 +5,8 @@ touch ~/.hushlogin
 
 ## Update config files
 
-# BASH
+# Shell config
+cp zshrc ~/.zshrc
 cp bashrc ~/.bashrc
 cp bashrc ~/.profile
 cp bash_aliases ~/.bash_aliases
