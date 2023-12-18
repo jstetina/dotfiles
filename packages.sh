@@ -57,6 +57,7 @@ install pactl
 install whois
 
 # Other utils
+insatll mosh
 install poppler-utils
 install npm
 install nodejs
