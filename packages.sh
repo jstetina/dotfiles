@@ -38,7 +38,7 @@ install torsocks
 install net-tools
 install openvpn
 install mutt
-insatll mosh
+install mosh
 install whois
 
 # MULTIPLEXERS
