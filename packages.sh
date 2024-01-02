@@ -38,6 +38,8 @@ install torsocks
 install net-tools
 install openvpn
 install mutt
+insatll mosh
+install whois
 
 # MULTIPLEXERS
 install screen
@@ -53,11 +55,7 @@ install tar
 # Ctl 
 install pactl
 
-# Whois 
-install whois
-
 # Other utils
-insatll mosh
 install poppler-utils
 install npm
 install nodejs
@@ -65,6 +63,7 @@ install fcrackzip
 install moreutils
 install exiftool
 install transmission-cli
+install zsh-syntax-highlighting
 install time
 install ascii
 install mp3info
