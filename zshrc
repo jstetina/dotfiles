@@ -28,6 +28,10 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 plugins=(
     git
+    pip
+    mosh
+    rsync
+    zsh-navigation-tools
     colored-man-pages
 )
 
