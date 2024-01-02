@@ -25,6 +25,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Plugin manager 
 source $HOME/.oh-my-zsh/antigen.zsh 
 antigen bundle zsh-users/zsh-autosuggestions
+antigen apply
+rm -f ~/.antigen/init.zsh
 
 plugins=(
     git
