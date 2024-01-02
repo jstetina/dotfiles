@@ -7,6 +7,7 @@ touch ~/.hushlogin
 
 # Shell config
 cp zshrc ~/.zshrc
+curl -s -L git.io/antigen > ~/.oh-my-zsh/antigen.zsh 
 cp bashrc ~/.bashrc
 cp bashrc ~/.profile
 cp bash_aliases ~/.bash_aliases
@@ -18,7 +19,7 @@ mkdir -p ~/Pictures
 cp img/* ~/Pictures
 
 cp send_mail.sh ~
-echo "Updated bash config"
+echo "Updated shell config"
 
 cp gitconfig ~/.gitconfig
 echo "Updated git config"
