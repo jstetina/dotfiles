@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
 
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -71,10 +72,15 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+
+# Plugin manager 
+source $HOME/.oh-my-zsh/antigen.zsh 
+antigen bundle zsh-users/zsh-autosuggestions
+
 plugins=(
     git
     colored-man-pages
-    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,9 +121,5 @@ export VISUAL=$(which vim)
 
 # Aliases
 source $HOME/.bash_aliases
-
-# Plugin manager 
-source $HOME/.oh-my-zsh/antigen.zsh 
-antigen bundle zsh-users/zsh-autosuggestions
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
