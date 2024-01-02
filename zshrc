@@ -30,9 +30,9 @@ plugins=(
     git
     pip
     mosh
-    rsync
     zsh-navigation-tools
     colored-man-pages
+    cmdtime
 )
 
 source $ZSH/oh-my-zsh.sh
