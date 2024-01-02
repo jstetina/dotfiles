@@ -2,7 +2,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
 
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -117,7 +116,8 @@ export VISUAL=$(which vim)
 # Aliases
 source $HOME/.bash_aliases
 
-
 # Plugin manager 
 source $HOME/.oh-my-zsh/antigen.zsh 
 antigen bundle zsh-users/zsh-autosuggestions
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
