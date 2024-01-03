@@ -27,6 +27,7 @@ source $HOME/.oh-my-zsh/antigen.zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 rm -f ~/.antigen/init.zsh
+rm -f ~/.antigen/.lock
 
 plugins=(
     git
