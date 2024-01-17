@@ -24,7 +24,10 @@ HIST_STAMPS="dd.mm.yyyy"
 
 # Plugin manager 
 source $HOME/.oh-my-zsh/antigen.zsh 
-antigen bundle zsh-users/zsh-autosuggestions
+antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle tom-auger/cmdtime --branch=main
+antigen bundle command-not-found
 antigen apply
 rm -f ~/.antigen/init.zsh
 rm -f ~/.antigen/.lock
@@ -35,7 +38,6 @@ plugins=(
     mosh
     zsh-navigation-tools
     colored-man-pages
-    cmdtime
 )
 
 source $ZSH/oh-my-zsh.sh
