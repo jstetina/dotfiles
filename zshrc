@@ -3,6 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=$(which vim)
 export VISUAL=$(which vim)
 export ARCHFLAGS="-arch x86_64"
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 # Path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
