@@ -35,6 +35,9 @@ alias cb='ssh batman'
 alias cbr='python /home/kuba/.ssh/setup.py; ssh batman-remote '
 alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds '
 
+# MOSH
+alias mi='mosh ironman'
+
 # NETWORKING
 alias ports='sudo netstat -tulanp '
 
