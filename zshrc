@@ -56,6 +56,7 @@ PROMPT='%{$fg_bold[green]%}%m%{$reset_color%} [%B%{$orange%}$(date +%H:%M)%{$res
 
 # Aliases
 source $HOME/.bash_aliases
+source $HOME/.bash_functions
 
 # Syntax highlighting plugin (MUST BE AT THE END!)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

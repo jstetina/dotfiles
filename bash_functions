@@ -2,7 +2,6 @@ function testing(){
 echo "hello"
 }
 
-
 # Display RAM, disk and uptime
 function system-status(){
     clear
@@ -48,5 +47,44 @@ function domain_check(){
         done     
     shift 
     done
+}    
+
+# Interactive rename of all files in a given directory
+# (also an option to specify the file extensions and only rename those files)
+rename_files() {
+    # Check if directory and extensions arguments are provided
+    if [ $# -lt 1 ]; then
+        echo "Usage: rename_files <directory> [<extension1> <extension2> ...]"
+        return 1
+    fi
+
+    local directory="$1"
+    shift
+
+    # Check if directory exists
+    if [ ! -d "$directory" ]; then
+        echo "Directory '$directory' not found."
+        return 1
+    fi
+
+    # Loop through files
+    for file in $directory/*; do
+
+        if [ -d $file ]; then 
+            continue;
+        fi
+
+        echo -n "Enter new name for '$file' (Press Enter to keep the same name): "
+        read -r new_name
+        if [ -n "$new_name" ]; then
+            mv "$file" "$directory/$new_name"
+            echo "'$file' renamed to '$new_name'"
+        fi
+    done
+
+    return 0
 }
+
+
+
 
