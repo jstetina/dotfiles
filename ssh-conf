@@ -2,6 +2,10 @@ Host ironman
     HostName 192.168.0.143
     User kuba
 
+Host tantalus
+    HostName 192.168.0.88
+    User kuba
+
 Host batman-remote
     HostName 7.tcp.eu.ngrok.io
     User kuba
