@@ -1,9 +1,5 @@
-Host batman
-    HostName 192.168.0.143
-    User kuba
-
 Host ironman
-    HostName 192.168.0.88
+    HostName 192.168.0.143
     User kuba
 
 Host batman-remote
