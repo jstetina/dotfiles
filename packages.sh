@@ -47,6 +47,7 @@ install tmux
 
 # Processes
 install htop
+install btop
 install time
 
 # Tar 
