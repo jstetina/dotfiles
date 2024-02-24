@@ -75,4 +75,10 @@ alias linesin='wc -l '
 
 # GIT
 alias g='git '
+alias gs='git status'
 alias gfc='git add . && git commit -m "fast auto commit" && git push '
+alias gpl='git pull'
+alias gpsh='git push'
+alias gl='git log --oneline'
+alias gc='git commit'
+
