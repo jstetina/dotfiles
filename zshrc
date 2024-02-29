@@ -12,7 +12,7 @@ export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
-
+export PATH=/home/xsteti05/miniconda3/bin:$PATH
 
 zstyle ':omz:update' mode auto # auto update
 zstyle ':omz:update' frequency 10
