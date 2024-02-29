@@ -8,6 +8,7 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 # Path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
+export PATH=$HOME/linuxbrew/.linuxbrew/bin:$PATH
 
 zstyle ':omz:update' mode auto # auto update
 zstyle ':omz:update' frequency 10
