@@ -5,10 +5,14 @@ export VISUAL=$(which vim)
 export ARCHFLAGS="-arch x86_64"
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
-# Path
+# PATH global
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+
+# PATH knot
+export PATH=/home/xsteti05/brew/bin:$PATH
+
 
 zstyle ':omz:update' mode auto # auto update
 zstyle ':omz:update' frequency 10
