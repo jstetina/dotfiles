@@ -50,8 +50,18 @@ install htop
 install btop
 install time
 
-# Tar 
+# Archiving, compression 
 install tar
+install zip
+install gzip
+install p7zip-full p7zip-rar
+install rar unrar
+
+# Build tools
+install build-essentials
+install prcps 
+install curl
+install file
 
 # Ctl 
 install pactl
