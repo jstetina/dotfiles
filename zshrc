@@ -34,6 +34,7 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tom-auger/cmdtime --branch=main
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 rm -f ~/.antigen/init.zsh
 rm -f ~/.antigen/.lock
@@ -61,5 +62,3 @@ PROMPT='%{$fg_bold[green]%}%m%{$reset_color%} [%B%{$orange%}$(date +%H:%M)%{$res
 source $HOME/.bash_aliases
 source $HOME/.bash_functions
 
-# Syntax highlighting plugin (MUST BE AT THE END!)
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

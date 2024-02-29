@@ -8,8 +8,8 @@ touch ~/.hushlogin
 # Shell config
 cp zshrc ~/.zshrc
 curl -s -L git.io/antigen > ~/.oh-my-zsh/antigen.zsh 
-cp bashrc ~/.bashrc
-cp bashrc ~/.profile
+#cp bashrc ~/.bashrc
+#cp bashrc ~/.profile
 cp bash_aliases ~/.bash_aliases
 cp bash_functions ~/.bash_functions
 
