@@ -45,7 +45,6 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tom-auger/cmdtime --branch=main
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 rm -f ~/.antigen/init.zsh
 rm -f ~/.antigen/.lock
