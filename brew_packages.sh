@@ -7,7 +7,7 @@ install_homebrew(){
 
 packages=(
     fzf
-    chezmo
+    chezmoi
     dust
     btop
     tldr
