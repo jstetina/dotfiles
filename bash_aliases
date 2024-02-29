@@ -54,7 +54,7 @@ alias tks='tmux kill-server '
 # Zellij
 alias z='zellij ' 
 alias zls='zellij list-sessions'
-
+alias zla='zellij attach'
 
 # FILE SYSTEM
 alias up='cd .. '
