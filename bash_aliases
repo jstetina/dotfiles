@@ -51,6 +51,11 @@ alias tk='tmux kill-session -t '
 alias tm='tmux '
 alias tks='tmux kill-server '
 
+# Zellij
+alias z='zellij ' 
+alias zls='zellij list-sessions'
+
+
 # FILE SYSTEM
 alias up='cd .. '
 alias up2='cd ../.. '
