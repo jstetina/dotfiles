@@ -29,7 +29,6 @@ source $HOME/.oh-my-zsh/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tom-auger/cmdtime --branch=main
-#antigen bundle command-not-found
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 rm -f ~/.antigen/init.zsh
@@ -37,8 +36,6 @@ rm -f ~/.antigen/.lock
 
 plugins=(
     git
-    pip
-    mosh
     command-not-found
     zsh-navigation-tools
     colored-man-pages
