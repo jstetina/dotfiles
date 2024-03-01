@@ -13,6 +13,8 @@ export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
 export PATH=/home/xsteti05/miniconda3/bin:$PATH
+
+# miniconda setup
 __conda_setup="$('/home/xsteti05/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
         eval "$__conda_setup"
@@ -25,6 +27,10 @@ if [ $? -eq 0 ]; then
 fi
 unset __conda_setup
 
+# Rust (cargo)
+source "$HOME/.cargo/env"
+
+# ZSH config
 zstyle ':omz:update' mode auto # auto update
 zstyle ':omz:update' frequency 10
 
