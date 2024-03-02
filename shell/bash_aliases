@@ -23,6 +23,8 @@ alias dlt='sudo systemctl list-timers --all '
 # DOCKER
 alias docker='sudo docker '
 alias dckr='sudo docker '
+alias dps='docker ps'
+alias dpsa='docker ps -a'
 
 # PACKAGES
 alias sai='sudo apt install -y '
@@ -39,7 +41,7 @@ alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.cr
 alias mi='mosh ironman'
 
 # NETWORKING
-alias ports='sudo netstat -tulanp '
+alias ports='sudo ss -tulanp '
 
 # NEO4J graph database
 alias neo='cypher-shell '
