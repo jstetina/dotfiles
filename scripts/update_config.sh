@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
 SHELL_DIR=../shell
 SSH_DIR=../ssh
 OTHER_DIR=../other
