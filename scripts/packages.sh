@@ -67,6 +67,7 @@ install file
 install pactl
 
 # Other utils
+install nala
 install poppler-utils
 install npm
 install nodejs
