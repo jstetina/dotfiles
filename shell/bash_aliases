@@ -29,6 +29,7 @@ alias dpsa='docker ps -a'
 # PACKAGES
 alias sai='sudo apt install -y '
 alias upup='sudo apt -y update; sudo apt -y full-upgrade '
+alias nala='sudo nala'
 
 # SSH
 alias ci='ssh ironman '
