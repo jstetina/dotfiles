@@ -6,7 +6,6 @@ export ARCHFLAGS="-arch x86_64"
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 # PATH global
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
@@ -14,8 +13,6 @@ export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
 export PATH=/home/xsteti05/miniconda3/bin:$PATH
-
-# miniconda setup
 __conda_setup="$('/home/xsteti05/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
         eval "$__conda_setup"
@@ -28,23 +25,21 @@ if [ $? -eq 0 ]; then
 fi
 unset __conda_setup
 
-# Rust (cargo)
-source "$HOME/.cargo/env"
-
-# ZSH config
 zstyle ':omz:update' mode auto # auto update
 zstyle ':omz:update' frequency 10
 
 ZSH_THEME="awesomepanda"
 CASE_SENSITIVE="true"
 
-DISABLE_MAGIC_FUNCTIONS="false"
-DISABLE_LS_COLORS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_LS_COLORS="false"
 DISABLE_AUTO_TITLE="false"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="false"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#767676'
+
 
 # Plugin manager 
 source $HOME/.oh-my-zsh/antigen.zsh 
@@ -53,12 +48,10 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tom-auger/cmdtime --branch=main
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
-rm -f ~/.antigen/init.zsh
 rm -f ~/.antigen/.lock
 
 plugins=(
     git
-    command-not-found
     zsh-navigation-tools
     colored-man-pages
 )
