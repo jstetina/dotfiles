@@ -52,6 +52,10 @@ Host athena1
     HostName athena1.fit.vutbr.cz
     User xsteti05
 
+Host pcondrej
+    Hostname pcondrej.fit.vutbr.cz
+    User xsteti05
+
 Host pcknot6
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
