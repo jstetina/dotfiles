@@ -10,6 +10,7 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/ngrok/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=$HOME/zellij:$PATH
 
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
