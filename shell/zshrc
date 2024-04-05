@@ -41,7 +41,7 @@ COMPLETION_WAITING_DOTS="false"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#767676'
-
+ZSH_DISABLE_COMPFIX=true
 
 # Plugin manager 
 source $HOME/.oh-my-zsh/antigen.zsh 
