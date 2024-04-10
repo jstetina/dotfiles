@@ -2,6 +2,10 @@ function testing(){
 echo "hello"
 }
 
+function rb(){
+    nohup "$@" &
+}
+
 # Display RAM, disk and uptime
 function system-status(){
     clear
