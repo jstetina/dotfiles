@@ -95,5 +95,3 @@ alias gc='git commit'
 alias sa='ssh athena'
 alias sp='ssh pcknot'
 
-# NVIM
-alias nvim='neovim'
