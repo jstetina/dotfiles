@@ -57,3 +57,5 @@ PROMPT='%{$fg_bold[green]%}%m%{$reset_color%} [%B%{$orange%}$(date +%H:%M)%{$res
 source $HOME/.bash_aliases
 source $HOME/.bash_functions
 
+# Key binds
+bindkey '^ ' autosuggest-accept
