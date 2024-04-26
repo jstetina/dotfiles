@@ -1,11 +1,23 @@
- export PATH="$HOME/nvim/bin/:$PATH"
- 
+#  ______           _            
+# (_____ \     _   | |           
+#  _____) )___| |_ | | _   ___   
+# |  ____/ _  |  _)| || \ /___)  
+# | |   ( ( | | |__| | | |___ |  
+# |_|    \_||_|\___)_| |_(___/   
+                               
+
+CUSTOM_APPS_DIR="$HOME/custom/apps"
+
 # PATH global
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Custom apps
 export PATH=$HOME/ngrok/bin:$PATH
-export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
-export PATH=$HOME/zellij:$PATH
+export PATH=$CUSTOM_APPS_DIR/cmake/bin:$PATH
+export PATH=$CUSTOM_APPS_DIR/zellij:$PATH
+export PATH=$CUSTOM_APPS_DIR/nvim/build/bin:$PATH
+export PATH=$HOME/.cargo/bin/eza:$PATH
 
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH

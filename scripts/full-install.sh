@@ -7,9 +7,13 @@ function run(){
 }
 
 run packages.sh
-run install_python_libs.sh
-run nvim-setup.sh
-run install_brew.sh
+
+# Custom installs
+run custom_installs/install_python_libs.sh
+run custom_installs/install_nvim.sh
+run custom_installs/install_brew.sh
+
+# Update configs
 run update_config.sh
 
 cp ssh-conf ~/.ssh/config
