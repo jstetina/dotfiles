@@ -53,6 +53,13 @@ function domain_check(){
     done
 }    
 
+function vim(){
+    if command -v nvim &> /dev/null; then
+        nvim "$@"
+    else
+        vim "$@"
+    fi
+}
 # Interactive rename of all files in a given directory
 # (also an option to specify the file extensions and only rename those files)
 rename_files() {

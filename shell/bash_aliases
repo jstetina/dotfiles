@@ -1,9 +1,6 @@
 # BASH
 alias lec='echo $? '
 
-# EDITORS
-alias vim='nvim || vim'  
-
 # JOURNALCTL
 alias jctl='sudo journalctl '
 alias blg='sudo journalctl -b '
