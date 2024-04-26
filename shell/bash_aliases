@@ -5,6 +5,9 @@ alias lec='echo $? '
 alias jctl='sudo journalctl '
 alias blg='sudo journalctl -b '
 
+# EDITORS
+alias v='vim'
+
 # SYSTEMD
 alias sctl='sudo systemctl '
 alias jctl='sudo journalctl '
