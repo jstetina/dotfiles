@@ -9,4 +9,5 @@
 	s = status
     pl = pull
     d = diff
+    log = log --name-status
     l = log --name-status
