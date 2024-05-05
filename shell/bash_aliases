@@ -92,6 +92,7 @@ alias gfc='git add . && git commit -m "fast auto commit" && git push '
 alias gpl='git pull'
 alias gpsh='git push'
 alias gl='git log --oneline'
+alias glg='git log --name-status'
 alias gc='git commit'
 
 # SSH
