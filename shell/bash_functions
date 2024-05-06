@@ -57,7 +57,8 @@ function vim(){
     if command -v nvim &> /dev/null; then
         nvim "$@"
     else
-        vim "$@"
+        
+        /usr/bin/vim "$@"
     fi
 }
 # Interactive rename of all files in a given directory
