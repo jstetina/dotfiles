@@ -12,6 +12,7 @@ run packages.sh
 run custom_installs/install_python_libs.sh
 run custom_installs/install_nvim.sh
 run custom_installs/install_brew.sh
+run custom_installs/install_zellij.sh
 
 # Update configs
 run update_config.sh
