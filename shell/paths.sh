@@ -17,7 +17,7 @@ export PATH=$HOME/ngrok/bin:$PATH
 export PATH=$CUSTOM_APPS_DIR/cmake/bin:$PATH
 export PATH=$CUSTOM_APPS_DIR/zellij:$PATH
 export PATH=$CUSTOM_APPS_DIR/nvim/build/bin:$PATH
-export PATH=$HOME/.cargo/bin/eza:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/custom/apps/chezmoi/:$PATH
 
 # PATH knot
