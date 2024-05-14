@@ -36,6 +36,7 @@ alias nala='sudo nala'
 
 # SSH
 alias ci='ssh ironman '
+alias ct='ssh tantalus '
 alias cir='python /home/kuba/.ssh/setup.py; ssh ironman-remote '
 alias cb='ssh batman' 
 alias cbr='python /home/kuba/.ssh/setup.py; ssh batman-remote '
