@@ -1,28 +1,27 @@
-Host ironman
-    HostName 192.168.0.143
-    User kuba
-
 Host tantalus
     HostName 192.168.0.88
     User kuba
 
-Host batman-remote
-    HostName 7.tcp.eu.ngrok.io
+Host ironman
+    HostName 192.168.0.143
     User kuba
-    Port 18961
+
+Host batman-remote
+    HostName 4.tcp.eu.ngrok.io
+    User kuba
+    Port 12584
     ServerAliveInterval 30
     CheckHostIp no
     StrictHostKeyChecking accept-new
-    UserKnownHostsFile NUL
+
 
 Host ironman-remote
-    HostName 7.tcp.eu.ngrok.io
+    HostName o.tcp.eu.ngrok.io
     User kuba
-    Port 18961
+    Port 18753
     ServerAliveInterval 30
     CheckHostIp no
     StrictHostKeyChecking accept-new
-    UserKnownHostsFile NUL
 
 Host merlin
     HostName merlin.fit.vutbr.cz
@@ -52,10 +51,6 @@ Host athena1
     HostName athena1.fit.vutbr.cz
     User xsteti05
 
-Host pcondrej
-    Hostname pcondrej.fit.vutbr.cz
-    User xsteti05
-
 Host pcknot6
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
@@ -63,3 +58,22 @@ Host pcknot6
 Host pcknot
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
+
+Host karolina
+  HostName karolina.it4i.cz
+  User jstetina
+
+Host compsys
+  HostName compsys.it4i.cz
+  User jstetina
+
+Host barbora
+  HostName barbora.it4i.cz 
+  User jstetina
+
+
+
+
+Host fedora
+    HostName 192.168.122.69
+    User root
