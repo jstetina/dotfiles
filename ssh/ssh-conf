@@ -51,6 +51,10 @@ Host athena1
     HostName athena1.fit.vutbr.cz
     User xsteti05
 
+Host athena20
+    HostName athena20.fit.vutbr.cz
+    User xsteti05
+
 Host pcknot6
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
@@ -70,9 +74,6 @@ Host compsys
 Host barbora
   HostName barbora.it4i.cz 
   User jstetina
-
-
-
 
 Host fedora
     HostName 192.168.122.69
