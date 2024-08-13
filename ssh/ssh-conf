@@ -14,7 +14,6 @@ Host batman-remote
     CheckHostIp no
     StrictHostKeyChecking accept-new
 
-
 Host ironman-remote
     HostName o.tcp.eu.ngrok.io
     User kuba
@@ -39,16 +38,20 @@ Host athena
     HostName athena3.fit.vutbr.cz
     User xsteti05
 
-Host athena3
-    HostName athena3.fit.vutbr.cz
+Host athena1
+    HostName athena1.fit.vutbr.cz
     User xsteti05
 
 Host athena2
     HostName athena2.fit.vutbr.cz
     User xsteti05
 
-Host athena1
-    HostName athena1.fit.vutbr.cz
+Host athena3
+    HostName athena3.fit.vutbr.cz
+    User xsteti05
+
+Host athena20
+    HostName athena20.fit.vutbr.cz
     User xsteti05
 
 Host athena20
