@@ -1,0 +1,16 @@
+Host batman-remote
+    HostName 4.tcp.eu.ngrok.io
+    User kuba
+    Port 12584
+    ServerAliveInterval 30
+    CheckHostIp no
+    StrictHostKeyChecking accept-new
+
+Host ironman-remote
+    HostName o.tcp.eu.ngrok.io
+    User kuba
+    Port 18753
+    ServerAliveInterval 30
+    CheckHostIp no
+    StrictHostKeyChecking accept-new
+

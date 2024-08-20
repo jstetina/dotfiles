@@ -18,6 +18,12 @@ curl -s -L git.io/antigen > ~/.oh-my-zsh/antigen.zsh
 cp $SHELL_DIR/bash_aliases ~/.bash_aliases
 cp $SHELL_DIR/bash_functions ~/.bash_functions
 
+
+# SSH config
+cp $SSH_DIR/ssh-conf $HOME/.ssh/config
+cp -r $SSH_DIR/conf.d $HOME/.ssh/
+echo "Updated ssh config"
+
 mkdir -p ~/Pictures
 cp $IMG_DIR/* ~/Pictures
 

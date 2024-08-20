@@ -1,0 +1,12 @@
+Host karolina
+  HostName karolina.it4i.cz
+  User jstetina
+
+Host compsys
+  HostName compsys.it4i.cz
+  User jstetina
+
+Host barbora
+  HostName barbora.it4i.cz 
+  User jstetina
+
