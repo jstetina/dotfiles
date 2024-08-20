@@ -50,9 +50,10 @@ Host athena3
     HostName athena3.fit.vutbr.cz
     User xsteti05
 
-Host athena20
-    HostName athena20.fit.vutbr.cz
+Host athena19
+    HostName athena19.fit.vutbr.cz
     User xsteti05
+
 
 Host athena20
     HostName athena20.fit.vutbr.cz
