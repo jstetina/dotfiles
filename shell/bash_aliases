@@ -63,6 +63,8 @@ alias z='zellij '
 alias zls='zellij list-sessions'
 alias zla='zellij attach'
 alias za='zellij attach'
+alias zdas='zellij delete-all-sessions'
+
 
 # FILE SYSTEM
 alias up='cd .. '
