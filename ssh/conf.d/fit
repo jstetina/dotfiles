@@ -1,7 +1,7 @@
-Host merlin
+Host merlin m
     HostName merlin.fit.vutbr.cz
     User xsteti05
 
-Host eva
+Host eva e
     HostName eva.fit.vutbr.cz
     User xsteti05

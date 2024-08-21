@@ -1,38 +1,31 @@
 # Disk server minerva
-Host minerva
+Host minerva1 minerva min m
     HostName minerva1.fit.vutbr.cz
     User xsteti05
 
 # Athena servers
-Host athena
-    HostName athena3.fit.vutbr.cz
-    User xsteti05
-
-Host athena1
+Host athena1 a1
     HostName athena1.fit.vutbr.cz
     User xsteti05
 
-Host athena2
+Host athena2 a2
     HostName athena2.fit.vutbr.cz
     User xsteti05
 
-Host athena3
+Host athena3 a3 athena
     HostName athena3.fit.vutbr.cz
     User xsteti05
 
-Host athena19
+Host athena19 a19
     HostName athena19.fit.vutbr.cz
     User xsteti05
 
-Host athena20
+Host athena20 a20
     HostName athena20.fit.vutbr.cz
     User xsteti05
 
 # Pcknot servers
-Host pcknot6
+Host pcknot6 p6 pk6 pcknot
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
 
-Host pcknot
-    HostName pcknot6.fit.vutbr.cz
-    User xsteti05
