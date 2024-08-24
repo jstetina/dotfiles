@@ -99,6 +99,7 @@ alias gpsh='git push'
 alias gl='git log --oneline'
 alias glg='git log --name-status'
 alias gc='git commit'
+alias gca='git commit --amend'
 
 # SSH
 alias sa='ssh athena'
