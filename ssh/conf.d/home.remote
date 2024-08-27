@@ -1,8 +1,4 @@
 Host ironman-remote ir
-    HostName o.tcp.eu.ngrok.io
+    HostName 62.245.121.13
     User kuba
-    Port 18753
-    ServerAliveInterval 30
-    CheckHostIp no
-    StrictHostKeyChecking accept-new
-
+    Port 2222
