@@ -47,6 +47,7 @@ alias mi='mosh ironman'
 
 # NETWORKING
 alias ports='sudo ss -tulanp '
+alias iptables='sudo iptables '
 
 # NEO4J graph database
 alias neo='cypher-shell '
