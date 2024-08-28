@@ -5,7 +5,7 @@ Host tantalus t
 
 Host ironman i
     HostName 192.168.0.143
-    ProxyCommand /usr/bin/knock %h 11765 11788 11753; /bin/nc %h %p
+    ProxyCommand bash -c '/usr/bin/knock %h 11765 11788 11753; /bin/nc %h %p'
     User kuba
     Port 22
 
