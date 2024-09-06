@@ -53,7 +53,7 @@ eval yellow='$FG[228]'
 local ret_status="%(?:%{$fg_bold[green]%}❯ :%{$fg_bold[red]%}✕ %s)%{$reset_color%}"
 
 HOSTNAME=$(hostname)
-HOSTS_CONVERT_ASCII=("athena", "pcknot", "pcondrej", "dell")
+HOSTS_CONVERT_ASCII=("athena", "pcknot", "pcondrej")
 
 # Check if the variable starts with one of the prefixes
 for hostname in "${HOSTS_CONVERT_ASCII[@]}"; do
@@ -70,7 +70,6 @@ for hostname in "${HOSTS_CONVERT_ASCII[@]}"; do
         ZSH_THEME_GIT_PROMPT_AHEAD="%{^%G%}"
         ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}%{...%G%}"
         ZSH_THEME_GIT_PROMPT_STASHED="%{$fg_bold[blue]%}%{STSH%G%}"
-        ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{OK%G%}"
         ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})%{$fg[yellow]%} x %{$reset_color%}"
 
         echo "Disabling non-ascii chars in prompt..."
