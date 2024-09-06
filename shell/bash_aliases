@@ -1,6 +1,9 @@
 # BASH
 alias lec='echo $? '
 
+# ZSH 
+alias szrc='source $HOME/.zshrc'
+
 # JOURNALCTL
 alias jctl='sudo journalctl '
 alias blg='sudo journalctl -b '
