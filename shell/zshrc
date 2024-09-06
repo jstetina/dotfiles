@@ -53,7 +53,7 @@ eval yellow='$FG[228]'
 local ret_status="%(?:%{$fg_bold[green]%}❯ :%{$fg_bold[red]%}✕ %s)%{$reset_color%}"
 
 HOSTNAME=$(hostname)
-HOSTS_CONVERT_ASCII=("athena", "pcknot", "pcondrej")
+HOSTS_CONVERT_ASCII=("athena1" "athena2" "athena3" "athena19" "athena20" "pcknot6" "minerva1" "pcondrej")
 
 # Check if the variable starts with one of the prefixes
 for hostname in "${HOSTS_CONVERT_ASCII[@]}"; do
