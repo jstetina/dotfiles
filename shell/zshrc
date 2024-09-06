@@ -49,8 +49,35 @@ eval orange='$FG[202]'
 eval purple='$FG[098]'
 eval yellow='$FG[228]'
 
-# Command return status
+
 local ret_status="%(?:%{$fg_bold[green]%}❯ :%{$fg_bold[red]%}✕ %s)%{$reset_color%}"
+
+HOSTNAME=$(hostname)
+HOSTS_CONVERT_ASCII=("athena", "pcknot", "pcondrej", "dell")
+
+# Check if the variable starts with one of the prefixes
+for hostname in "${HOSTS_CONVERT_ASCII[@]}"; do
+    if [[ "$HOSTNAME" == "$hostname"* ]]; then
+        ret_status="%(?:%{$fg_bold[green]%}> :%{$fg_bold[red]%}x %s)%{$reset_color%}"
+
+        # ZSH git-prompt plugin overrides
+        ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[magenta]%}"
+        ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[red]%}%{STG%G%}"
+        ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg[red]%}%{x%G%}"
+        ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[blue]%}%{+%G%}"
+        ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[blue]%}%{-%G%}"
+        ZSH_THEME_GIT_PROMPT_BEHIND="%{v%G%}"
+        ZSH_THEME_GIT_PROMPT_AHEAD="%{^%G%}"
+        ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}%{...%G%}"
+        ZSH_THEME_GIT_PROMPT_STASHED="%{$fg_bold[blue]%}%{STSH%G%}"
+        ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{OK%G%}"
+        ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})%{$fg[yellow]%} x %{$reset_color%}"
+
+        echo "Disabling non-ascii chars in prompt..."
+        break
+    fi
+done
+
 PROMPT='%{$fg_bold[green]%}%m%{$reset_color%} [%B%{$orange%}$(date +%H:%M)%{$reset_color%}%b] %{$fg_bold[blue]%}$(git_prompt_info)%}%{$fg_bold[blue]%}%1~%{$reset_color%} ${ret_status} '
 
 # Aliases
