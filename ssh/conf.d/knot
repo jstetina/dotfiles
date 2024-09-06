@@ -28,4 +28,5 @@ Host athena20 a20
 Host pcknot6 p6 pk6 pcknot
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
-
+    RequestTTY yes
+    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
