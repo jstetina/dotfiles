@@ -20,6 +20,8 @@ export PATH=$CUSTOM_APPS_DIR/nvim/build/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/custom/apps/chezmoi/:$PATH
 
+export PATH=$HOME/zsh/Src:$PATH
+
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
 export PATH=/home/xsteti05/miniconda3/bin:$PATH
