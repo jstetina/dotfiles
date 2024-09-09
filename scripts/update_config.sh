@@ -33,9 +33,9 @@ echo "Updated shell config"
 cp $GIT_DIR/gitconfig ~/.gitconfig
 echo "Updated git config"
 
-mkdir -p ~/.mutt
+#mkdir -p ~/.mutt
 #cp $OTHER_DIR/muttrc ~/.mutt/muttrc
-echo "Updated mutt config"
+#echo "Updated mutt config"
 
 # (n)vim 
 cp $OTHER_DIR/vimrc ~/.vimrc
