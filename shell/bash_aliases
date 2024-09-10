@@ -115,6 +115,7 @@ alias gc='git commit'
 alias gca='git commit --amend'
 
 # SSH
+alias s='ssh '
 alias sa='ssh athena'
 alias sp='ssh pcknot'
 
