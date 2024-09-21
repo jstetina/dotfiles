@@ -21,6 +21,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/custom/apps/chezmoi/:$PATH
 
 export PATH=$HOME/custom/apps/zsh/Src:$PATH
+export PATH=$CUSTOM_APPS_DIR/utils:$PATH
 
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
