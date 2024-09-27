@@ -40,6 +40,8 @@ alias ds='sudo docker stop '
 alias dst='sudo docker start '
 alias drmi='sudo docker rmi '
 alias dcs='sudo docker compose up -d '
+alias dsl='sudo docker service logs '
+alias shd='cd $HOME/projects/smart_home/ && docker stack deploy -c docker-compose.yml smart_home_stack --detach=true; cd $OLDPWD'
 
 # PACKAGES
 alias sai='sudo apt install -y '
