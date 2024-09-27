@@ -22,6 +22,7 @@ install cmake
 
 # Editors
 install vim
+install nvim
 
 # Git, github 
 install git
@@ -83,3 +84,4 @@ install grub-customizer
 install tree
 install speedtest-cli
 install jq
+install neofetch
