@@ -42,12 +42,7 @@ cp $OTHER_DIR/vimrc ~/.vimrc
 echo "Updated vim config"
 
 # neovim
-if [ ! -d "$HOME/.config/nvim" ]; then 
-    echo "neovim config not detected, downloading.."
-    git clone https://github.com/NvChad/starter $HOME/.config/nvim --depth 1 
-else 
-    cp -r "$OTHER_DIR/nvim" "$HOME/.config"
-fi
+cp -r "$OTHER_DIR/nvim" "$HOME/.config"
 echo "Updated nvim config"
 
 cp $OTHER_DIR/tmux.conf ~/.tmux.conf
