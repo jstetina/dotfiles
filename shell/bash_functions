@@ -97,6 +97,17 @@ rename_files() {
     return 0
 }
 
+function exp() { 
+  local dir="$(pwd)"
 
-
-
+  if [ -n "$1" ]; then 
+    dir="$1"
+  fi 
+  
+  # Check dir existence
+  if [ ! -d "$dir" ]; then 
+    echo "Dir $dir does not exist or is not a directory";
+  fi 
+  echo "Opening explorer in ${dir}" 
+  dolphin $dir
+}
