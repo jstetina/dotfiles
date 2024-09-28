@@ -107,7 +107,7 @@ function exp() {
   # Check dir existence
   if [ ! -d "$dir" ]; then 
     echo "Dir $dir does not exist or is not a directory";
-    exit 1
+    return
   fi
 
   echo "Opening explorer in ${dir}" 
