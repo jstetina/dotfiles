@@ -2,6 +2,15 @@ function testing(){
 echo "hello"
 }
 
+function update-config() {
+  cd $HOME/dotfiles;
+  git switch main;
+  git pull origin main;
+  ./scripts/update_config.sh;
+  cd $OLDPWD;
+  source $HOME/.zshrc;
+}
+
 function rb(){
     nohup "$@" &
 }
