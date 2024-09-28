@@ -108,7 +108,8 @@ function exp() {
   if [ ! -d "$dir" ]; then 
     echo "Dir $dir does not exist or is not a directory";
     exit 1
-  fi 
+  fi
+
   echo "Opening explorer in ${dir}" 
   dolphin $dir
 }
