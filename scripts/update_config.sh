@@ -37,9 +37,13 @@ echo "Updated git config"
 #cp $OTHER_DIR/muttrc ~/.mutt/muttrc
 #echo "Updated mutt config"
 
-# (n)vim 
+# vim
 cp $OTHER_DIR/vimrc ~/.vimrc
 echo "Updated vim config"
+
+# neovim
+cp -r $OTHER_DIR/nvim $HOME/.config
+echo "Updated nvim config"
 
 cp $OTHER_DIR/tmux.conf ~/.tmux.conf
 echo "updated tmux config"
