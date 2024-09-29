@@ -40,6 +40,8 @@ alias ds='sudo docker stop '
 alias dst='sudo docker start '
 alias drmi='sudo docker rmi '
 alias dcs='sudo docker compose up -d '
+alias dsl='sudo docker service ls'
+alias dslo='sudo docker service logs '
 
 # PACKAGES
 alias sai='sudo apt install -y '
