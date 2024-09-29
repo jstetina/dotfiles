@@ -15,8 +15,8 @@ cp $SHELL_DIR/zshrc ~/.zshrc
 curl -s -L git.io/antigen > ~/.oh-my-zsh/antigen.zsh 
 #cp bashrc ~/.bashrc
 #cp bashrc ~/.profile
-cp $SHELL_DIR/bash_aliases ~/.bash_aliases
-cp $SHELL_DIR/bash_functions ~/.bash_functions
+cp $SHELL_DIR/bash_aliases.sh ~/.bash_aliases.sh
+cp $SHELL_DIR/bash_functions.sh ~/.bash_functions.sh
 
 
 # SSH config

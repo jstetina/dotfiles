@@ -11,6 +11,12 @@ function update-config() {
   source $HOME/.zshrc;
 }
 
+function push-config() { 
+    cd $HOME/dotfiles
+    git push origin main
+    cd $OLDPWD
+} 
+
 function rb(){
     nohup "$@" &
 }

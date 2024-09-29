@@ -80,8 +80,8 @@ done
 PROMPT='%{$fg_bold[green]%}%m%{$reset_color%} [%B%{$orange%}$(date +%H:%M)%{$reset_color%}%b] %{$fg_bold[blue]%}$(git_prompt_info)%}%{$fg_bold[blue]%}%1~%{$reset_color%} ${ret_status} '
 
 # Aliases
-source $HOME/.bash_aliases
-source $HOME/.bash_functions
+source $HOME/.bash_aliases.sh
+source $HOME/.bash_functions.sh
 
 # Key binds
 bindkey '^ ' autosuggest-accept
