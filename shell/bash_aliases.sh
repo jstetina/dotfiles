@@ -42,6 +42,11 @@ alias drmi='sudo docker rmi '
 alias dcs='sudo docker compose up -d '
 alias dsl='sudo docker service ls'
 alias dslo='sudo docker service logs '
+alias shd='\
+    cd $HOME/projects/smart_home && \
+    sudo docker stack deploy -c docker-compose.yml smart_home_stack --detach=true; \
+    docker service update smart_home_stack_rev_proxy; \
+    cd $OLDPWD'
 
 # PACKAGES
 alias sai='sudo apt install -y '
