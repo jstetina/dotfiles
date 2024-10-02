@@ -5,7 +5,11 @@ Host tantalus t
 
 Host ironman i
     HostName 192.168.0.143
-    ProxyCommand bash -c '/usr/bin/knock %h 11765 11788 11753; /bin/nc %h %p'
+    User kuba
+    Port 22
+
+Host triton tr
+    HostName 192.168.0.42
     User kuba
     Port 22
 
