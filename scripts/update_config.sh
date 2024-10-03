@@ -2,6 +2,7 @@
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
+DOTFILES_DIR=..
 SHELL_DIR=../shell
 SSH_DIR=../ssh
 OTHER_DIR=../other
@@ -45,7 +46,7 @@ echo "Updated vim config"
 cp -r "$OTHER_DIR/nvim" "$HOME/.config"
 echo "Updated nvim config"
 
-cp $OTHER_DIR/tmux.conf ~/.tmux.conf
+cp $DOTFILES_DIR/tmux/tmux.conf ~/.tmux.conf
 echo "updated tmux config"
 
 echo "CHANGES SYNCED"
