@@ -54,11 +54,17 @@ alias sai='sudo apt install -y '
 alias upup='sudo apt -y update; sudo apt -y full-upgrade '
 alias nala='sudo nala'
 
+
 # SSH
 alias ci='ssh ironman '
 alias ct='ssh tantalus '
 alias ctr='ssh triton'
-alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds '
+alias s='ssh '
+alias sa='ssh athena'
+alias sp='ssh pcknot'
+
+# Parallel SSH
+alias pssh='parallel-ssh '
 
 # MOSH
 alias mi='mosh ironman'
@@ -66,6 +72,7 @@ alias mi='mosh ironman'
 # NETWORKING
 alias ports='sudo ss -tulanp '
 alias iptables='sudo iptables '
+alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds '
 
 # NEO4J graph database
 alias neo='cypher-shell '
@@ -120,8 +127,4 @@ alias glg='git log --name-status'
 alias gc='git commit -m '
 alias gca='git commit --amend'
 
-# SSH
-alias s='ssh '
-alias sa='ssh athena'
-alias sp='ssh pcknot'
 
