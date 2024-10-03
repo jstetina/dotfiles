@@ -21,7 +21,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/custom/apps/chezmoi/:$PATH
 export PATH=$HOME/custom/apps/zsh/Src:$PATH
 export PATH=$HOME/custom/utils:$PATH
-export PATH=$HOME/dotfiles/tmux/scripts/
+export PATH=$HOME/dotfiles/tmux/scripts:$PATH
 
 # PATH knot
 export PATH=/home/xsteti05/brew/bin:$PATH
