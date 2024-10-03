@@ -57,9 +57,7 @@ alias nala='sudo nala'
 # SSH
 alias ci='ssh ironman '
 alias ct='ssh tantalus '
-alias cir='python /home/kuba/.ssh/setup.py; ssh ironman-remote '
-alias cb='ssh batman' 
-alias cbr='python /home/kuba/.ssh/setup.py; ssh batman-remote '
+alias ctr='ssh triton'
 alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.creds '
 
 # MOSH
