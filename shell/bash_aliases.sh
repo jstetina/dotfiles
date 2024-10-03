@@ -65,6 +65,7 @@ alias sp='ssh pcknot'
 
 # Parallel SSH
 alias pssh='parallel-ssh '
+alias rr='parallel-ssh -l kuba -h $HOME/dotfiles/other/rpis.txt -i '
 
 # MOSH
 alias mi='mosh ironman'
