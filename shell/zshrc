@@ -15,7 +15,6 @@ local hostname="$(hostname)"
 raspberry_pi_hostnames=("triton" "ironman" "tantalus")
 for rpi_hostname in "${raspberry_pi_hostnames[@]}"; do 
     if [ "$hostname" = "$rpi_hostname" ]; then 
-        echo "Forcing lc_all"
         export LC_ALL=en_US.UTF-8
         break
     fi
