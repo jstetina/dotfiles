@@ -51,7 +51,7 @@ alias shd='\
 
 # PACKAGES
 alias sai='sudo apt install -y '
-alias sar='sudo apt remove '
+alias sar='sudo apt remove -y '
 alias upup='sudo apt -y update; sudo apt -y full-upgrade '
 alias nala='sudo nala'
 
