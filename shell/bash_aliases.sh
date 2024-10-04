@@ -116,6 +116,7 @@ alias linesin='wc -l '
 alias ll='eza -l --git'
 alias llg='eza --git-repos --git -l'
 alias llm='eza -l -M'
+alias exp='dolphin . '
 
 # GIT
 alias g='git '
