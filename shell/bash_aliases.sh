@@ -41,6 +41,7 @@ alias dst='sudo docker start '
 alias drmi='sudo docker rmi '
 alias dcs='sudo docker compose up -d '
 alias dsl='sudo docker service ls'
+alias dsrm='sudo docker service rm '
 alias dslo='sudo docker service logs '
 alias dnls='sudo docker node ls'
 alias dnlsl='docker node ls -q | xargs docker node inspect \
