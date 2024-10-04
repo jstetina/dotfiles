@@ -128,5 +128,5 @@ alias gl='git log --oneline'
 alias glg='git log --name-status'
 alias gc='git commit -m '
 alias gca='git commit --amend'
-
+alias gpom='git push origin main'
 
