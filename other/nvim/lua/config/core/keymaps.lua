@@ -5,8 +5,8 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- Tabs
-keymap.set("n", "<C-Tab>", ":tabnext<CR>", { noremap = true, silent = true })
-keymap.set("n", "<C-S-Tab>", ":tabprevious<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-Tab>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-S-Tab>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
 
 -- Terminal
 keymap.set("t", "<C-x>", "<C-\\><C-n>", { noremap = true, silent = true })
