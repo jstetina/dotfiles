@@ -26,7 +26,7 @@ export PATH=$HOME/dotfiles/tmux/scripts:$PATH
 # PATH knot
 
 if [ -d "$HOME/.nvm" ]; then 
-    "Sourcing nvm.sh"
+    echo "Sourcing nvm.sh"
     source "$HOME/.nvm/nvm.sh"
 fi
 
