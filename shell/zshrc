@@ -3,7 +3,7 @@ cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
 source $HOME/dotfiles/shell/paths.sh
 
-#ENV VARS
+# ENV VARS
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=$(which vim)
 export VISUAL=$(which vim)

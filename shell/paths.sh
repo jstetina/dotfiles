@@ -24,6 +24,12 @@ export PATH=$HOME/custom/utils:$PATH
 export PATH=$HOME/dotfiles/tmux/scripts:$PATH
 
 # PATH knot
+
+if [ -d "$HOME/.nvm" ]; then 
+    "Sourcing nvm.sh"
+    source "$HOME/.nvm/nvm.sh"
+fi
+
 export PATH=/home/xsteti05/brew/bin:$PATH
 export PATH=/home/xsteti05/miniconda3/bin:$PATH
 __conda_setup="$('/home/xsteti05/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
