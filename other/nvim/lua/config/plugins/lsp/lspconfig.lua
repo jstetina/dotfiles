@@ -85,26 +85,11 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["svelte"] = function()
-        -- configure svelte server
-        lspconfig["svelte"].setup({
-          capabilities = capabilities,
-          on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd("BufWritePost", {
-              pattern = { "*.js", "*.ts" },
-              callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
-                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-              end,
-            })
-          end,
-        })
-      end,
       ["graphql"] = function()
         -- configure graphql language server
         lspconfig["graphql"].setup({
           capabilities = capabilities,
-          filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+          filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
         })
       end,
       ["emmet_ls"] = function()
@@ -129,6 +114,16 @@ return {
               },
             },
           },
+        })
+      end,
+      ["clangd"] = function()
+        -- configure c/c++ language server
+        lspconfig["clangd"].setup({
+          capabilities = capabilities,
+          on_attach = function(client, bufnr)
+            client.server_capabilities.documentFormattingProvider = false
+            client.server_capabilities.documentRangeFormattingProvider = false
+          end,
         })
       end,
     })
