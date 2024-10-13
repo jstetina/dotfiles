@@ -42,3 +42,8 @@ Host pcknot6 p6 pk6 pcknot
     User xsteti05
     RequestTTY yes
     RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
+
+# Pcondrej servers
+Host pcondrej
+    HostName pcondrej.fit.vutbr.cz
+    User xsteti05
