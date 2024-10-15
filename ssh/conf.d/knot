@@ -2,46 +2,32 @@
 Host minerva1 minerva min m
     HostName minerva1.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 # Athena servers
 Host athena1 a1
     HostName athena1.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 Host athena2 a2
     HostName athena2.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 Host athena3 a3 athena
     HostName athena3.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 Host athena19 a19
     HostName athena19.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 Host athena20 a20
     HostName athena20.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 # Pcknot servers
 Host pcknot6 p6 pk6 pcknot
     HostName pcknot6.fit.vutbr.cz
     User xsteti05
-    RequestTTY yes
-    RemoteCommand /home/xsteti05/custom/apps/zsh/Src/zsh -c "source /home/xsteti05/.zshrc; zsh -i" 
 
 # Pcondrej servers
 Host pcondrej
