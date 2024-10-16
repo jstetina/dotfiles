@@ -113,5 +113,7 @@ rename_files() {
 }
 
 
-
+function tma() {
+    tmux attach -t "$1"
+}
 

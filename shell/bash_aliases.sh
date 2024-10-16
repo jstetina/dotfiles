@@ -83,7 +83,7 @@ alias fitvpn='sudo openvpn --config ~/vpn/fit.ovpn --auth-user-pass ~/vpn/fit.cr
 alias neo='cypher-shell '
 
 # TMUX
-alias tma='tmux a -t '
+# alias tma moved to bash_functions.sh
 alias tl='tmux ls '
 alias tk='tmux kill-session -t '
 alias tm='tmux '
