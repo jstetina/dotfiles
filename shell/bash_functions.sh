@@ -78,7 +78,7 @@ function vim(){
 }
 # Interactive rename of all files in a given directory
 # (also an option to specify the file extensions and only rename those files)
-rename_files() {
+function rename_files() {
     # Check if directory and extensions arguments are provided
     if [ $# -lt 1 ]; then
         echo "Usage: rename_files <directory> [<extension1> <extension2> ...]"
@@ -112,8 +112,20 @@ rename_files() {
     return 0
 }
 
-
-tma() {
+function tma() {
     tmux attach -t "$1"
 }
+
+function knomux() {
+    parallel-ssh -l xsteti05 -h $HOME/dotfiles/other/knoties.txt -i '
+    result=$(tmux ls 2>/dev/null)
+    if [ $? -ne 0 ]; then
+        echo "No tmux sessions"
+    else
+        echo "$result"
+    fi
+'
+}
+
+
 
