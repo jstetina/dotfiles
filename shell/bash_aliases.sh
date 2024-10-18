@@ -88,6 +88,8 @@ alias tl='tmux ls '
 alias tk='tmux kill-session -t '
 alias tm='tmux '
 alias tks='tmux kill-server '
+alias trs='tmux rename session '
+alias trs='tmux rename window '
 
 # Zellij
 alias z='zellij ' 
