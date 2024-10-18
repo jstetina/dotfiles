@@ -127,5 +127,9 @@ function knomux() {
 '
 }
 
+function knorun() {
+    parallel-ssh -l xsteti05 -h $HOME/dotfiles/other/knoties.txt -i "$1"
+}
+
 
 
