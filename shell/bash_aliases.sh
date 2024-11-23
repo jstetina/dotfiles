@@ -136,3 +136,5 @@ alias gc='git commit -m '
 alias gca='git commit --amend'
 alias gpom='git push origin main'
 
+# MISC 
+alias td='transmission-cli -w . '
