@@ -3,4 +3,5 @@ Include conf.d/home.remote
 Include conf.d/it4i.ostrava
 Include conf.d/knot
 Include conf.d/fit
+Include conf.d/gitea
 
