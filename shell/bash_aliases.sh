@@ -48,7 +48,7 @@ alias dnlsl='docker node ls -q | xargs docker node inspect \
   -f "{{ .ID }} [{{ .Description.Hostname }}]: {{ .Spec.Labels }}"'
 alias shd='\
     cd $HOME/projects/smart_home && \
-    sudo docker stack deploy -c docker-compose.yml smart_home_stack --detach=true; \
+    sudo docker stack deploy -c stack-compose.yml smart_home_stack --detach=true; \
     docker service update smart_home_stack_rev_proxy; \
     cd $OLDPWD'
 
