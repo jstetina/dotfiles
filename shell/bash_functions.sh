@@ -131,5 +131,22 @@ function knorun() {
     parallel-ssh -l xsteti05 -h $HOME/dotfiles/other/knoties.txt -i "$1"
 }
 
+function pswait() { 
+    if [ -z "$1" ]; then 
+        echo "Supply process number";
+    fi
+
+    ps -p "$1" > /dev/null 2>&1
+    if [ $? -ne 0 ]; then 
+        return 
+    fi
+
+
+    while ps -p "$1" > /dev/null;
+    do
+        sleep 10;
+    done
+}
+
 
 
